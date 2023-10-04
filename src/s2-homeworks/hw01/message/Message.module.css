@@ -1,31 +1,62 @@
 .message {
-
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    padding-right: 70px;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
 }
 
 .imageAndText img {
-
+    width: 65px;
+    margin: 0 1px 5px 10px;
 }
 
 .text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: #0059b3;
+    padding: 10px;
+    border-radius: 10px 10px 0 10px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    z-index: 2;
 
+    -webkit-box-shadow: 4px 16px 42px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 16px 42px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 16px 42px -18px rgba(0, 0, 0, 0.75);
 }
 
 .text:after {
-
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    z-index: -4;
+    border-bottom: 25px solid #1d59b3;
+    border-right: 30px solid transparent;
 }
 
 .name {
-
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .messageText {
-
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
 }
 
 .time {
-
+    margin: 5px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
 }

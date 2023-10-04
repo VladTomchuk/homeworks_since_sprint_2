@@ -35,10 +35,10 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Elijah Craig',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'Hey dude! Have you learnt already an associative array?', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -46,22 +46,23 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Sloppy Joe', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hi bro! Yeah, I have done, but I guess better to repeat it.', // можно менять
+        time: '23:05', // можно менять
     },
 }
 
 const HW1 = () => {
     return (
-        <div id={'hw1'}>
+        <div id={'hw1'} >
             <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0} />
+
+                    <Message message={message0}/>
                     <FriendMessage message={friendMessage0} />
                 </div>
 
