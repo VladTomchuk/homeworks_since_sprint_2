@@ -26,6 +26,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 
         const checked = e.currentTarget.checked
         onChangeChecked && onChangeChecked(checked)
+        onChange && onChange(e)
 
         // задачка на написание онченджа
 
